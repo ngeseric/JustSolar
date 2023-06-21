@@ -1,0 +1,41 @@
+<!-- Contact Form -->
+<section id="contact" class="py-5">
+    <form action="process-form.php" method="POST">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <div class="mb-3">
+                        <label for="name" class="form-label "><b>Name</b></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"><b>Select Product(s)</b></label><br>
+                        <!-- Add 'name' attribute to each checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="30W" id="product-1" name="products[]">
+                            <label class="form-check-label" for="product-1">30W Solar LED Street Light</label>
+                        </div>
+                        <!-- Repeat the same pattern for other checkboxes -->
+                        ...
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label"><b>Phone Number</b></label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label"><b>Location</b></label>
+                        <input type="text" class="form-control" id="location" name="location" placeholder="Enter your location">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label"><b>Message</b></label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
